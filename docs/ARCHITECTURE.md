@@ -7,8 +7,8 @@ Living version of the rebuild plan (2026-07). Decisions and their rationale: `DE
 | Repo | Hosting | Visibility | Role |
 |---|---|---|---|
 | `dotfiles-core` | personal GitHub | **public** | everything shared by both machines |
-| `dotfiles` (personal) | personal GitHub | private | personal machine's chezmoi source |
-| `dotfiles` (work) | work GitHub | private | work machine's chezmoi source |
+| `dotfiles-personal` | personal GitHub | private | personal machine's chezmoi source |
+| `dotfiles-work` | work GitHub | private | work machine's chezmoi source |
 
 Core is public **by design**: it contains nothing identifying (no names, emails, machine
 details — invariant I2), and public hosting is what removes every cross-account

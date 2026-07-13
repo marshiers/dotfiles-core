@@ -7,7 +7,8 @@ this public file on purpose).
 ## Prerequisites (once, from any browser)
 
 1. The three GitHub repos exist and are pushed: `dotfiles-core` (public, personal
-   account), `dotfiles` (private, personal account), `dotfiles` (private, work account).
+   account), `dotfiles-personal` (private, personal account), `dotfiles-work`
+   (private, work account).
 2. You can sign in to the matching GitHub account to add an SSH key.
 
 ## The one command
