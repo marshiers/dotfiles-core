@@ -1,0 +1,14 @@
+# dotfiles-core ghostty config — shared terminal settings.
+# Loaded from each machine's ~/.config/ghostty/config via `config-file`. Ghostty
+# processes included files AFTER the including file, and later values win — so a
+# key set here would silently override the machine layer. Keep the key sets
+# disjoint: font-family (and anything machine-specific) must NEVER appear here.
+
+# TODO(human): pick a theme — `ghostty +list-themes`
+theme = catppuccin-mocha
+
+font-size = 13
+window-padding-x = 10
+window-padding-y = 10
+macos-titlebar-style = tabs
+cursor-style = block

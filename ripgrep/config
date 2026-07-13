@@ -1,0 +1,8 @@
+# ripgrep defaults — loaded via RIPGREP_CONFIG_PATH (set in zsh/30-tools.zsh).
+# One flag per line. This file is the reason grep is NOT aliased to rg: defaults
+# belong in config, not in shell aliases.
+--smart-case
+--hidden
+--glob=!.git/
+--glob=!node_modules/
+--glob=!.venv/

@@ -1,0 +1,16 @@
+# Shared prompt for both machines (chezmoi symlinks ~/.config/starship.toml here).
+# Keep it fast: avoid modules that shell out on every prompt.
+# TODO(human): tune to taste — https://starship.rs/config/
+
+add_newline = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+
+[cmd_duration]
+min_time = 2000

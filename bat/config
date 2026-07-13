@@ -1,0 +1,3 @@
+# bat defaults — loaded via BAT_CONFIG_PATH (set in zsh/30-tools.zsh).
+--style="numbers,changes,header"
+# TODO(human): pick a theme — `bat --list-themes`

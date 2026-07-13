@@ -1,0 +1,39 @@
+# dotfiles-core git config — shared by both machines.
+# NO [user] section here (this repo is public): identity is rendered into each
+# machine's ~/.config/git/config by chezmoi from locally-prompted values.
+
+[core]
+	editor = micro
+	autocrlf = input
+	safecrlf = true
+	pager = delta
+
+[init]
+	defaultBranch = main
+
+[pull]
+	ff = only
+
+[push]
+	autoSetupRemote = true
+
+[fetch]
+	prune = true
+
+[rebase]
+	autostash = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[diff]
+	colorMoved = default
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	line-numbers = true
+
+# TODO(human): shared git aliases, if any
