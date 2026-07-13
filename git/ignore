@@ -1,0 +1,19 @@
+# Global gitignore for both machines — symlinked to ~/.config/git/ignore, which
+# git reads automatically (XDG default; no core.excludesfile needed).
+# CAUTION: *.local below silently excluded .brew/Brewfile.local from the machine
+# repos once already — that file is force-tracked (`git add -f`), which makes it
+# immune, but think twice before naming a repo file to match any pattern here.
+
+.DS_Store
+Thumbs.db
+*.log
+logs/
+node_modules/
+dist/
+build/
+.cache/
+.env
+.env.*
+*.local
+
+**/.claude/settings.local.json
