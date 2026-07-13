@@ -17,4 +17,5 @@ command -v bat >/dev/null 2>&1 && alias cat='bat --paging=never'
 
 command -v lazygit >/dev/null 2>&1 && alias lg='lazygit'
 
-# TODO(human): add shared muscle-memory aliases (git shortcuts, etc.)
+# Deliberately no git shortcut aliases (gs/gc/gp...): git commands are typed in
+# full, or use lazygit (lg).

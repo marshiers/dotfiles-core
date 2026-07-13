@@ -4,8 +4,7 @@
 # key set here would silently override the machine layer. Keep the key sets
 # disjoint: font-family (and anything machine-specific) must NEVER appear here.
 
-# TODO(human): pick a theme — `ghostty +list-themes`
-theme = catppuccin-mocha
+theme = arthur
 
 font-size = 13
 window-padding-x = 10

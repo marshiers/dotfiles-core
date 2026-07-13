@@ -38,8 +38,21 @@ set_default NSGlobalDomain ApplePressAndHoldEnabled -bool false # hold = repeat,
 # --- Dock ----------------------------------------------------------------------
 set_default com.apple.dock show-recents -bool false # no "recent apps" section
 
-# TODO(human): extend. Rule: every non-obvious key gets a comment saying what it
-# changes in the UI. Machine-only settings go in that machine's run_after_20-macos.sh.
+# --- Screenshots -----------------------------------------------------------------
+mkdir -p "$HOME/Pictures/Screenshots" # target must exist or screencapture ignores it
+set_default com.apple.screencapture location -string "$HOME/Pictures/Screenshots"
+
+# --- Save dialogs ----------------------------------------------------------------
+set_default NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true  # save panels open expanded
+set_default NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true # (newer panel variant)
+
+# --- Files & Finder behaviour ----------------------------------------------------
+set_default com.apple.finder _FXSortFoldersFirst -bool true               # folders sort above files
+set_default com.apple.desktopservices DSDontWriteNetworkStores -bool true # no .DS_Store on network shares
+set_default com.apple.desktopservices DSDontWriteUSBStores -bool true     # no .DS_Store on USB drives
+
+# Rule when extending: every non-obvious key gets a comment saying what it changes
+# in the UI. Machine-only settings go in that machine's run_after_20-macos.sh.
 
 if [[ $changed -eq 1 ]]; then
   killall Dock 2>/dev/null || true

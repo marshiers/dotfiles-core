@@ -1,8 +1,14 @@
 # Shared prompt for both machines (chezmoi symlinks ~/.config/starship.toml here).
-# Keep it fast: avoid modules that shell out on every prompt.
-# TODO(human): tune to taste — https://starship.rs/config/
+# Keep it FAST: starship renders synchronously, so the levers are a short module
+# list, file-detection gating, and the two timeouts below. Language modules
+# (nodejs, python, ...) are enabled by default and render ONLY inside matching
+# project directories — they cost nothing elsewhere. node comes from mise, python
+# from uv (docs/DECISIONS.md #10). If a module ever feels slow, disable it here
+# with:  [modulename] disabled = true
 
 add_newline = true
+scan_timeout = 10     # ms budget for project-file detection (default 30)
+command_timeout = 500 # ms cap on any version command a module shells out to
 
 [character]
 success_symbol = "[❯](bold green)"
@@ -14,3 +20,7 @@ truncate_to_repo = true
 
 [cmd_duration]
 min_time = 2000
+
+# package.json/pyproject version readout: shells out per prompt for little value
+[package]
+disabled = true

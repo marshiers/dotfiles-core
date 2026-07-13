@@ -36,4 +36,4 @@
 	navigate = true
 	line-numbers = true
 
-# TODO(human): shared git aliases, if any
+# Deliberately no [alias] section: git commands are typed in full, or use lazygit.
