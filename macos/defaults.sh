@@ -25,18 +25,18 @@ set_default() {
 }
 
 # --- Finder -------------------------------------------------------------------
-set_default NSGlobalDomain AppleShowAllExtensions -bool true # show all file extensions
-set_default com.apple.finder ShowPathbar -bool true          # path bar at bottom of Finder windows
-set_default com.apple.finder ShowStatusBar -bool true        # item count + free space footer
+set_default NSGlobalDomain AppleShowAllExtensions -bool true     # show all file extensions
+set_default com.apple.finder ShowPathbar -bool true              # path bar at bottom of Finder windows
+set_default com.apple.finder ShowStatusBar -bool true            # item count + free space footer
 set_default com.apple.finder FXPreferredViewStyle -string "Nlsv" # default to list view
 
 # --- Keyboard ------------------------------------------------------------------
-set_default NSGlobalDomain KeyRepeat -int 2                  # fastest key repeat
-set_default NSGlobalDomain InitialKeyRepeat -int 15          # short delay before repeat
+set_default NSGlobalDomain KeyRepeat -int 2                     # fastest key repeat
+set_default NSGlobalDomain InitialKeyRepeat -int 15             # short delay before repeat
 set_default NSGlobalDomain ApplePressAndHoldEnabled -bool false # hold = repeat, not accent picker
 
 # --- Dock ----------------------------------------------------------------------
-set_default com.apple.dock show-recents -bool false          # no "recent apps" section
+set_default com.apple.dock show-recents -bool false # no "recent apps" section
 
 # TODO(human): extend. Rule: every non-obvious key gets a comment saying what it
 # changes in the UI. Machine-only settings go in that machine's run_after_20-macos.sh.

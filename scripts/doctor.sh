@@ -17,13 +17,13 @@ DOTFILES_HOME="${DOTFILES_HOME:-$HOME/Developer/dotfiles}"
 CORE="$DOTFILES_HOME/core"
 
 # --- workspace shape ------------------------------------------------------
-[[ -d "$CORE" ]] && ok "core present at $CORE" || bad "core missing at $CORE"
+if [[ -d "$CORE" ]]; then ok "core present at $CORE"; else bad "core missing at $CORE"; fi
 
 MACHINE=""
 for m in personal work; do
   [[ -d "$DOTFILES_HOME/$m" ]] && MACHINE="$m"
 done
-[[ -n "$MACHINE" ]] && ok "machine layer: $MACHINE" || bad "no machine repo under $DOTFILES_HOME"
+if [[ -n "$MACHINE" ]]; then ok "machine layer: $MACHINE"; else bad "no machine repo under $DOTFILES_HOME"; fi
 if [[ -d "$DOTFILES_HOME/personal" && -d "$DOTFILES_HOME/work" ]]; then
   bad "BOTH machine repos cloned — a machine must have exactly one (ARCHITECTURE.md)"
 fi
