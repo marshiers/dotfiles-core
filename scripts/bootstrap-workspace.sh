@@ -32,10 +32,11 @@ echo "==> [2/6] Minimum tools (the rest arrives via brew-sync on first apply)"
 brew install git chezmoi
 
 echo "==> [3/6] SSH key for the $MACHINE GitHub account"
-KEY="$HOME/.ssh/github_${MACHINE}"
+# One key per machine and one GitHub account per machine, so no suffix is needed
+KEY="$HOME/.ssh/github"
 mkdir -p "$HOME/.ssh" && chmod 700 "$HOME/.ssh"
 if [[ ! -f "$KEY" ]]; then
-  ssh-keygen -t ed25519 -f "$KEY" -C "github_${MACHINE}"
+  ssh-keygen -t ed25519 -f "$KEY" -C "github"
   # store the passphrase in the Apple keychain so pushes don't re-prompt
   ssh-add --apple-use-keychain "$KEY" || true
   echo

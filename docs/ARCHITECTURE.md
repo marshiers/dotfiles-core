@@ -51,7 +51,8 @@ a `run_once` script and is the only editing copy.
 
 One GitHub identity per machine — so there are **no host aliases, no `insteadOf`
 rewrites, no `includeIf` gitdir switching**. Each machine has a single on-disk ed25519
-key (`~/.ssh/github_<machine>`, passphrase in the Apple keychain) referenced by the one
+key (`~/.ssh/github` — no per-machine suffix, since a machine only ever has one
+GitHub identity; passphrase in the Apple keychain) referenced by the one
 `Host github.com` entry in its chezmoi-managed `~/.ssh/config`. Ad-hoc infra hosts live
 in `~/.ssh/config.local`, untracked. No commit signing (DECISIONS.md #3).
 

@@ -22,7 +22,7 @@ What it does, in order (all idempotent — safe to re-run if interrupted):
 
 1. Installs Homebrew (which installs the Xcode Command Line Tools, hence git).
 2. `brew install git chezmoi` — the minimum; everything else arrives in step 5.
-3. Generates `~/.ssh/github_<machine>` (ed25519), stores the passphrase in the Apple
+3. Generates `~/.ssh/github` (ed25519), stores the passphrase in the Apple
    keychain, prints the public key, and **waits while you add it to the matching GitHub
    account** (Settings → SSH and GPG keys). This is interactive step 1 of 2.
 4. Clones the machine repo to `$DOTFILES_HOME/<machine>` (default `~/Developer/dotfiles`).
