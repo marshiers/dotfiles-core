@@ -21,7 +21,7 @@ Homebrew on 2026-07-13; all casks live in `homebrew/cask` — **no taps required
 | mise | node + all runtimes except Python | nvm etc. |
 | uv | Python: interpreters, venvs, tools | pyenv/pip/pipx |
 | jq, btop, wget, micro, shellcheck, shfmt | utilities; micro is `$EDITOR` | nano (micro) |
-| appcleaner, betterdisplay, coteditor, figma, firefox, ghostty, iina, logi-options+, maccy, rectangle, visual-studio-code | GUI apps | — |
+| appcleaner, betterdisplay, coteditor, figma, firefox, ghostty, iina, logi-options+, maccy, mos, rectangle, visual-studio-code | GUI apps | — |
 | 5 nerd fonts | see Brewfile fonts section | — |
 
 ## Personal only

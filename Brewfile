@@ -48,6 +48,7 @@ cask "ghostty"
 cask "iina"
 cask "logi-options+"        # Logitech Options+ — was "logitech-options"; that cask is deprecated (EOL 2026-12-12)
 cask "maccy"
+cask "mos"                  # scroll smoothing + per-app scroll direction
 cask "rectangle"
 cask "visual-studio-code"       # settings + extensions via Settings Sync (DECISIONS.md #7)
 
