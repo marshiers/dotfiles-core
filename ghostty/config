@@ -4,10 +4,24 @@
 # key set here would silently override the machine layer. Keep the key sets
 # disjoint: font-family (and anything machine-specific) must NEVER appear here.
 
-theme = arthur
+# Auto light/dark switching, tied to macOS appearance. macos-titlebar-style =
+# tabs (below) makes the titlebar luminosity-match automatically too.
+# Ghostty's own built-in reference theme — no aesthetic opinion beyond
+# "correct" (confirmed against `ghostty +list-themes`).
+theme = dark:Builtin Dark,light:Builtin Light
 
 font-size = 13
 window-padding-x = 10
 window-padding-y = 10
 macos-titlebar-style = tabs
 cursor-style = block
+
+# Native macOS 26+ glass material (not the older manual blur-radius
+# approximation). Needs background-opacity < 1 to have any effect.
+# Tune opacity to taste; macos-glass-clear is the more-transparent variant.
+background-opacity = 0.85
+background-blur = true
+
+# Option key sends Alt/Meta instead of composing accented characters —
+# needed for terminal programs/shells that expect alt+key bindings.
+macos-option-as-alt = true

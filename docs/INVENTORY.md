@@ -21,7 +21,7 @@ Homebrew on 2026-07-13; all casks live in `homebrew/cask` — **no taps required
 | mise | node + all runtimes except Python | nvm etc. |
 | uv | Python: interpreters, venvs, tools | pyenv/pip/pipx |
 | jq, btop, wget, micro, shellcheck, shfmt | utilities; micro is `$EDITOR` | nano (micro) |
-| appcleaner, betterdisplay, coteditor, figma, ghostty, iina, maccy, rectangle, visual-studio-code | GUI apps | — |
+| appcleaner, betterdisplay, coteditor, figma, firefox, ghostty, iina, logi-options+, maccy, rectangle, visual-studio-code | GUI apps | — |
 | 5 nerd fonts | see Brewfile fonts section | — |
 
 ## Personal only
@@ -30,7 +30,7 @@ Homebrew on 2026-07-13; all casks live in `homebrew/cask` — **no taps required
 |---|---|
 | 1password, 1password-cli | password manager (CLI for general use; never called by chezmoi) |
 | codex (cask) | OpenAI Codex CLI |
-| dropbox, firefox, pixelmator-pro, tailscale, todoist, transmission, typora | apps |
+| dropbox, pixelmator-pro, tailscale, todoist, transmission, typora | apps |
 | mactex-no-gui, tex-fmt | TeX toolchain (PATH wired in personal `conf.d/50-local.zsh`) |
 
 ## Work only

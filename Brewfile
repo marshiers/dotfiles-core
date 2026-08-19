@@ -43,8 +43,10 @@ cask "appcleaner"
 cask "betterdisplay"
 cask "coteditor"
 cask "figma"
+cask "firefox"
 cask "ghostty"
 cask "iina"
+cask "logi-options+"        # Logitech Options+ — was "logitech-options"; that cask is deprecated (EOL 2026-12-12)
 cask "maccy"
 cask "rectangle"
 cask "visual-studio-code"       # settings + extensions via Settings Sync (DECISIONS.md #7)
