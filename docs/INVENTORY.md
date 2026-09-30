@@ -38,7 +38,7 @@ Homebrew on 2026-07-13; all casks live in `homebrew/cask` — **no taps required
 | Tool | Why |
 |---|---|
 | bitwarden | password manager |
-| claude-code (cask) | Claude Code CLI |
+| claude-code@latest (cask) | Claude Code CLI |
 | google-chrome, localsend, microsoft-teams | apps |
 
 ## Deliberately absent

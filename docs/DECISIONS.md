@@ -45,9 +45,10 @@ vars, git include, ghostty include, starship symlink, external target — derive
 
 ## 6. AI CLIs via Homebrew casks
 
-`claude-code` (work) and `codex` (personal) install as casks: one package manager, fully
-declarative, restored by bootstrap. Accepted trade-off: may lag the native installers by
-days. **Alternative rejected:** native installers (undocumented install channel).
+`claude-code@latest` (work) and `codex` (personal) install as casks: one package
+manager, fully declarative, restored by bootstrap. Accepted trade-off: may lag
+the native installers by days. **Alternative rejected:** native installers
+(undocumented install channel).
 
 ## 7. VS Code owned by Settings Sync
 
