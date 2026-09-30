@@ -12,8 +12,7 @@ font-size = 13
 window-padding-x = 10
 window-padding-y = 10
 
-# Native titlebar avoids tab bar layout issues on macOS Golden Gate.
-macos-titlebar-style = native
+macos-titlebar-style = transparent
 
 cursor-style = block
 
