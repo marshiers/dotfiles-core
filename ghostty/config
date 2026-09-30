@@ -4,9 +4,9 @@
 # key set here would silently override the machine layer. Keep the key sets
 # disjoint: font-family (and anything machine-specific) must NEVER appear here.
 
-# Auto light/dark switching, tied to macOS appearance, using Ghostty's
-# built-in reference themes (confirmed against `ghostty +list-themes`).
-theme = dark:Builtin Dark,light:Builtin Light
+# Auto light/dark switching, tied to macOS appearance, using the
+# Zenwritten themes bundled with Ghostty.
+theme = dark:Zenwritten Dark,light:Zenwritten Light
 
 font-size = 13
 window-padding-x = 10
